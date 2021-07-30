@@ -55,6 +55,20 @@ class HashTable {
         console.log(currentBucket);
 
     }
+
+
+    keys(){
+        const keyArrays = [];
+
+        for (let i = 0; i< this.data.length; i++){
+            if (this.data[i]){
+                keyArrays.push(this.data[i][0][0]);
+
+            }
+        }
+        return keyArrays
+
+    }
 }
 
 
@@ -62,7 +76,12 @@ const myHashTable = new HashTable(50);
 // myHashTable._hash("grapes");
 myHashTable.set('grapes', 100);
 myHashTable.set('apple', 54);
-console.log(myHashTable);
+myHashTable.set('oranges', 2);
+myHashTable.set('banana', 4);
 
-console.log(myHashTable.get('apple'));
 
+// console.log(myHashTable);
+
+// console.log(myHashTable.get('apple'));
+
+console.log(myHashTable.keys());
