@@ -23,7 +23,7 @@ function findRepeatingCharWithSet(input) {
     }
     console.log(map);
     return undefined;
-}
+}//O(n)
 
 
 
