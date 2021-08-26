@@ -1,5 +1,5 @@
 
-const array = [-2, -3, 4, -1, -2, 1, 5, -3];
+const array = [5, -4, -2, 6, -1];//[-2, -3, 4, -1, -2, 1, 5, -3];
 
 
 function maxSumSubArray(array) {

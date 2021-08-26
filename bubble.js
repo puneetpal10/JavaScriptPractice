@@ -3,7 +3,7 @@
 const array = [7,5,4,1,0,8,2];
 
 
-function bubbleSort(array){
+function bubbleSort(array){// Time complexity Best O(n) , avg and worst O(n^2) and space compexity O(1)
     const length = array.length
 
     for (let i = 0 ; i < length; i++){

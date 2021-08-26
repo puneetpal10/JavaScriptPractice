@@ -20,7 +20,7 @@ function findFactorial(number) {
 // console.log(findFactorial(3));
 
 
-function findfactorialRecursive(number) {
+function findfactorialRecursive(number) {//O(2^n)
     if (number === 2) {
         return 2;
     }
@@ -35,7 +35,7 @@ function findfactorialRecursive(number) {
 // Fibonacchi
 
 
-function fibonacciRecursion(n) {
+function fibonacciRecursion(n) { // O(2^n) Exponential
     if (n < 2) {
         return n;
     }
@@ -46,7 +46,7 @@ function fibonacciRecursion(n) {
 
 // console.log(fibonacciItrative(6));
 
-function fibonacciIterative(n){
+function fibonacciIterative(n){ //O(n)
     let arr = [0, 1];
     for (let i = 2; i < n + 1; i++){
       arr.push(arr[i - 2] + arr[i -1]);
