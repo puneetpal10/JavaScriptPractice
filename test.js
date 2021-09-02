@@ -21,16 +21,34 @@ function findTargetVale(nums, target) {// O(n^2)
 // console.log(findTargetVale(array,target));
 
 
-const twoSum = (nums, target) => {// O(n^2)
+// const twoSum = (nums, target) => {// O(n)
 
-    let storage = {};
-    for (let [index, num] of nums.entries()) {
+//     let storage = {}; //O(n)
+//     for (let [index, num] of nums.entries()) {
 
-        if(storage[num] !== undefined){
-            return [storage[num], index]
+//         if(storage[num] !== undefined){
+//             return [storage[num], index]
+//         }
+//         storage[target - num] = index;
+//     }
+// }
+
+
+const array1 = [1,5,9];
+
+const twoSum = (nums, target) => {// O(n)
+
+    let map = {}; //O(n)
+    for (let i = 0 ; i < nums.length ; i++){
+        var value = nums[i];
+        var complementPair = target - value;
+
+        if (map[complementPair] !== undefined){
+            return [map[complementPair],i];
         }
-        storage[target - num] = index;
+        map[value] = i;
+
     }
 }
 
-console.log(twoSum(array, target));
+console.log(twoSum(array1, 10));
